@@ -145,24 +145,25 @@ main {
 }
 
 /* Navbar */
-.nav-container {
-    padding: 15px;
+.nav-background {
     min-height: 10vh;
+    padding: 15px;
     background-color: var(--blue);
-}
-
-.navbar-toggler {
-    border-radius: 5px;
-    background-color: var(--white);
 }
 
 .navbar-logo {
     color: var(--white)!important;
-    transition: .4s ease-in-out
+    transition: .4s ease-in-out;
 }
 
 .navbar-logo:hover {
     color: var(--tan)!important;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-logo {
+        font-size: 1.25rem;
+    }
 }
 
 .nav-link {
@@ -827,6 +828,19 @@ footer {
     width: 100%;
     color: var(--blue);
     font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .socials h4 {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    .footer-link {
+        font-size: 1rem;
+    }
+    .footer-info p {
+        font-size: .8rem;
+    }
 }
 
 /* Error Page */

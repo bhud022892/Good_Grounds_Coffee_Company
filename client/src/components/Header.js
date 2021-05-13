@@ -18,10 +18,10 @@ const Header = () => {
 
     return (
         <header>
-            <Navbar expand="lg" collapseOnSelect className='nav-container'>
+            <Navbar expand="lg" collapseOnSelect className='nav-background'>
                 <Container>
                     <LinkContainer to='/'>
-                        <Navbar.Brand className='navbar-logo'>Good Grounds Coffee Co</Navbar.Brand>
+                        <Navbar.Brand className='navbar-logo'>Good Grounds</Navbar.Brand>
                     </LinkContainer>                    
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

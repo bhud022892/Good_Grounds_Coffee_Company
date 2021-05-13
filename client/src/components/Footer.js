@@ -24,7 +24,7 @@ const Footer = () => {
                     </div>
                 </Col>
                 <Col md={4} className='footer-info'>   
-                    <p>Copyright &copy; Good Grounds Coffee Co.</p>              
+                    <p>&copy; Good Grounds Coffee Co.</p>              
                 </Col>
             </Row>
         </footer>

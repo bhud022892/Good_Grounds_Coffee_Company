@@ -4739,11 +4739,12 @@ input[type=submit].btn-block {
 }
 
 .navbar-toggler {
-    padding: .25rem .75rem;
+    padding: .25rem .5rem;
     font-size: 1.09375rem;
     line-height: 1;
-    background-color: transparent;
-    border: 1px solid transparent;
+    background-color: #E2E0CE;
+    border: 1px solid #E2E0CE;
+    border-radius: 5px;
 }
 
 .navbar-toggler:focus,
@@ -4753,8 +4754,8 @@ input[type=submit].btn-block {
 
 .navbar-toggler-icon {
     display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
+    width: 1em;
+    height: 1em;
     vertical-align: middle;
     content: "";
     background: 50%/100% 100% no-repeat;
