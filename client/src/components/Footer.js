@@ -10,7 +10,6 @@ const Footer = () => {
                     <p>Free Shipping On Orders Over $100!</p>                
                 </Col>
                 <Col md={4} className='socials'>
-                    <h4>Follow Us</h4>
                     <div className='social-links'>
                         <LinkContainer to='#'>
                             <Nav.Link className='footer-link'><i class="fab fa-facebook-square"></i></Nav.Link>

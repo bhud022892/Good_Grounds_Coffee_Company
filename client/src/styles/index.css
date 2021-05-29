@@ -802,10 +802,6 @@ footer {
     text-align: center;
 }
 
-.socials h4 {
-    color: var(--blue);
-}
-
 .social-links {
     display: flex;
     justify-content: center;
@@ -831,10 +827,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .socials h4 {
-        font-size: 1rem;
-        margin-bottom: 0;
-    }
     .footer-link {
         font-size: 1rem;
     }

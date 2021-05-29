@@ -25,40 +25,42 @@ const AllProductsScreen = ({ match }) => {
 
     return (
         <>
-            <Container>
-            <Meta title='Good Grounds | Shop' />
-                <h1 className='all-products-title'>Coffee Blends</h1>
-                {loading ? ( 
-                    <Loader /> 
-                ) : error ? (
-                    <Message variant='danger'>{error}</Message>
-                ) : ( 
-                <>
-                {keyword && 
-                <div className='all-products-btn-container'>
-                    <Link 
-                        to='/shop' 
-                        className='all-products-btn'
-                    >
-                        All Coffee Blends
-                    </Link>
-                </div> 
-                }
-                    <Row>
-                        { products.map(product =>                     
-                            <Col key={product._id} sm={12} md={6} lg={4} xl={4}>
-                                <Product product={product} />
-                            </Col>
-                        )}
-                    </Row>
-                    <Paginate 
-                        pages={pages} 
-                        page={page} 
-                        keyword={keyword ? keyword : ''} 
-                    />
-                    </>
-                )}           
-            </Container>
+        <Meta title='Good Grounds | Shop' />
+        <Container>
+            <h1 className='all-products-title'>Coffee Blends</h1>
+            {loading ? ( 
+                <Loader /> 
+            ) : error ? (
+                <Message variant='danger'>{error}</Message>
+            ) 
+            : ( 
+            <>
+            {keyword && 
+            <div className='all-products-btn-container'>
+                <Link 
+                    to='/shop' 
+                    className='all-products-btn'
+                >
+                    All Coffee Blends
+                </Link>
+            </div> 
+            }
+                <Row>
+                    { products
+                    .map(product => (
+                        <Col key={product._id} sm={12} md={6} lg={4} xl={4}>
+                            <Product product={product} />
+                        </Col>
+                    ))}
+                </Row>
+                <Paginate 
+                    pages={pages} 
+                    page={page} 
+                    keyword={keyword ? keyword : ''} 
+                />
+                </>
+            )}  
+        </Container>          
         </>
     )
 }
